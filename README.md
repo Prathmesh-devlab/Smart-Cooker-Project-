@@ -5,11 +5,14 @@ In busy households, users may forget to monitor the pressure cooker or accuratel
 
 # Technologies used 
 1.Python
+
 2.VS code
 
 # Versions 
 V1 - Basic tracking 
+
 V2 - Handle invalid counter setting 
+
 V3 - To modify counter 
 
 # License 
