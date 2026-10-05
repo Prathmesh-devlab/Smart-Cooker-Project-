@@ -1,2 +1,19 @@
 # Smart-Cooker-Project-
-This is smart cooker which counts it's whistle and alerts the user. In busy household, user may forgot to keep count of whistles which can lead to overcooked food or burnt food it also causes energy wastage to prevent this here is smart cooker 
+
+# About Project 
+In busy households, users may forget to monitor the pressure cooker or accurately count its whistles while performing other activities. This can lead to overcooked or burnt food, unnecessary energy consumption, damaged utensils, and potential kitchen safety risks. Manually monitoring and counting whistles also requires continuous attention and time. Therefore, there is a need for a smart, low-cost, and automated system that can detect and count pressure-cooker whistles accurately and provide an alert when the desired number of whistles is reached, allowing users to manage cooking more conveniently and efficiently.
+
+# Technologies used 
+1.Python
+2.VS code
+
+# Versions 
+V1 - Basic tracking 
+V2 - Handle invalid counter setting 
+V3 - To modify counter 
+
+# License 
+Copyright © 2026 [Prathmesh Pasalkar]. All rights reserved.
+
+This source code is provided for viewing and educational reference only. No permission is granted to copy, modify, distribute, reproduce,publish, or commercially use this source code without prior written permission from the copyright holder.
+
