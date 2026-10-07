@@ -1,0 +1,11 @@
+{% extends "syntax.html" %}
+
+{% block body %}
+<form action="/count" method="post" style="text-align: center;">
+    <input type="submit" value="Wistle" name="n1" >
+</form>&nbsp;<br>&nbsp;<br>&nbsp;<br>
+
+<form action="/reset" method="post" style="text-align: center;">
+    <input type="submit" value="Reset" >
+</form>
+{% endblock %}
