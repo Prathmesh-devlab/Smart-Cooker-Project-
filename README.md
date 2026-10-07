@@ -26,14 +26,19 @@ V4 - Actual web interface
 # Current features
 
 1.Count whistles
+
 2.Option to set whistles
+
 3.Reset whistles
+
 4.Display alert message
 
 # Future goals
 
 1.Alert the user
+
 2.Cut off power supply automatically
+
 3.Build actual working model
 
 # License 
