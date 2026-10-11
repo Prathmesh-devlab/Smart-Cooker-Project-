@@ -1,0 +1,12 @@
+{% extends "syntax.html" %}
+
+{% block body %}
+<h2 style="color: white;">Remaining wistles {{remaining}}</h2>
+<form action="/count" method="post" style="text-align: center;">
+    <input type="image" src="static/WHISTLE.jpg"  name="n1" >
+</form>&nbsp;<br>&nbsp;<br>&nbsp;<br>
+
+<form action="/reset" method="post" style="text-align: center;">
+    <input type="image" src="static/RESET.jpg" >
+</form>
+{% endblock %}
