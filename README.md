@@ -15,13 +15,11 @@ In busy households, users may forget to monitor the pressure cooker or accuratel
 5.CSS
 
 # Versions 
-V1 - Basic tracking 
-
-V2 - Handle invalid counter setting 
-
-V3 - To modify counter 
-
-V4 - Actual web interface
+-V1 - Basic tracking 
+-V2 - Handle invalid counter setting 
+-V3 - To modify counter 
+-V4 - Actual web interface
+-v5 - Alert user by turning alarm on
 
 # Current features
 
@@ -33,13 +31,14 @@ V4 - Actual web interface
 
 4.Display alert message
 
+5.Turn on alarm
+
 # Future goals
 
-1.Alert the user
 
-2.Cut off power supply automatically
+1.Cut off power supply automatically
 
-3.Build actual working model
+2.Build actual working model
 
 # License 
 Copyright © 2026 [Prathmesh Pasalkar]. All rights reserved.
