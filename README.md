@@ -15,11 +15,17 @@ In busy households, users may forget to monitor the pressure cooker or accuratel
 5.CSS
 
 # Versions 
--V1 - Basic tracking 
--V2 - Handle invalid counter setting 
--V3 - To modify counter 
--V4 - Actual web interface
--v5 - Alert user by turning alarm on
+V1 - Basic tracking 
+
+V2 - Handle invalid counter setting
+
+V3 - To modify counter
+
+V4 - Actual web interface
+
+v5 - Alert user by turning alarm on
+
+v6 - Modern interface
 
 # Current features
 
@@ -33,8 +39,9 @@ In busy households, users may forget to monitor the pressure cooker or accuratel
 
 5.Turn on alarm
 
-# Future goals
+6.Show remaining whistles
 
+# Future goals
 
 1.Cut off power supply automatically
 
