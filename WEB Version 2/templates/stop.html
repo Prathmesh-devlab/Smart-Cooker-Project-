@@ -1,0 +1,9 @@
+{% extends "syntax.html" %}
+
+{% block body %}
+<h1 style="text-align: center;">Turn off the gas</h1>
+<audio autoplay src="static/Smart_cooker_alarm.wav" loop></audio>
+<form action="/reset" method="post" style="text-align: center;">
+    <input type="submit" value="Reset">
+</form>
+{% endblock %}
