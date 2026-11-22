@@ -14,6 +14,10 @@ In busy households, users may forget to monitor the pressure cooker or accuratel
 
 5.CSS
 
+6.Arduino
+
+7.Telegram Bot
+
 # Versions 
 V1 - Basic tracking 
 
@@ -23,9 +27,9 @@ V3 - To modify counter
 
 V4 - Actual web interface
 
-v5 - Alert user by turning alarm on
+V5 - Alert user by turning alarm on
 
-v6 - Modern interface
+V6 - Modern interface
 
 # Current features
 
@@ -41,11 +45,40 @@ v6 - Modern interface
 
 6.Show remaining whistles
 
-# Future goals
+7.Turn off gas by servo motor
 
-1.Cut off power supply automatically
+8.Give alert if temperature exceeds above normal working temperature
 
-2.Build actual working model
+9.Release heat from cooker as temperature goes beyond 122 to avoid blasting
+
+10.Give notification after every whistle through BOT
+
+# Actual prototype version
+
+V6.2 - Actual working model using sensors and giving alert through BOT
+
+# Hardware required
+
+1.ESP32
+
+2.Expansion Board
+
+3.LDR Sensor
+
+4.Laser module
+
+5.Buzzer
+
+6.Jumper Wires
+
+7.Servo Motor
+
+8.DS18B20 (Temperature sensor)
+
+9.PCB Board
+
+10.Resistor (4.7 K ohm)
+
 
 # License 
 Copyright © 2026 [Prathmesh Pasalkar]. All rights reserved.
