@@ -1,0 +1,71 @@
+<div id="whistlePopup"
+     style="display:none;
+            position:fixed;
+            top:20px;
+            right:20px;
+            background:green;
+            color:white;
+            padding:15px;
+            border-radius:10px;
+            z-index:9999;
+            font-size:18px;">
+</div>
+
+<script>
+setInterval(async () => {
+    try {
+        const response = await fetch('/api/status');
+        const data = await response.json();
+
+        document.getElementById('remaining-count').innerText =
+            data.remaining;
+
+    if (data.new_whistle) {
+
+            // Browser notification
+     if (Notification.permission === "granted") {
+         new Notification("Whistle Detected", {
+         body: `Count: ${data.attempts}/${data.target}`
+         });
+      }
+
+      const beep = new Audio("/static/beep.mp3");
+      beep.play();
+
+      const popup = document.getElementById("whistlePopup");
+
+      popup.innerHTML =
+          `✅ Whistle Detected<br>
+           Count: ${data.attempts}/${data.target}`;
+
+      popup.style.display = "block";
+
+      setTimeout(() => {
+          popup.style.display = "none";
+      }, 2000);
+
+      await fetch('/clear_whistle');
+    }
+
+        if (data.is_high_temp) {
+            window.location.href = "/alert";
+        }
+        else if (data.is_complete) {
+            window.location.href = "/stop";
+        }
+
+    } catch (err) {
+        console.error("Polling error:", err);
+    }
+}, 1000);
+</script>
+
+{% extends "syntax.html" %}
+
+{% block body %}
+<h2 style="color: white;" id="remaining-count">Remaining whistles {{remaining}}</h2>
+
+<form action="/reset" method="post" style="text-align: center;">
+    <input type="image" src="static/RESET.jpg" >
+</form>
+{% endblock %}

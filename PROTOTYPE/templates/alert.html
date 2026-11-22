@@ -1,0 +1,21 @@
+{% extends "syntax.html" %}
+{% block body %}
+
+<script>
+setTimeout(async () => {
+
+    await fetch('/clear_alert');
+
+    
+
+}, 2000);
+
+</script>
+
+    <h2 style="color: white;">🔥 HIGH TEMPERATURE ALERT 🔥</h2>
+    <p style="color: white;">The temperature is too high!</p>
+
+    <form action="/reset" method="post" style="text-align: center;">
+    <input type="image" src="static/RESET.jpg" >
+    </form>
+{% endblock %}
